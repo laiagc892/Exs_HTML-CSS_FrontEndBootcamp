@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+/* NAV */
+.nav{
+    margin: 0;
+    width: 100%;
+    background-color: rgba(227, 24, 54, 0.9);
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.nav ul{
+    width: 50%;
+    margin: 1em auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li{
+    text-align: center;
+    font-weight: 100;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-family: 'Exo 2';
+    color: white;
+    padding: 10px 35px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+/* HEADER */
+.header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0 20px 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 300px;
+    margin: 20px;
+    padding-top: 50px;
+}
+h1{
+    margin: 20px;
+    padding-top: 20px;
+    font-family: 'Exo 2';
+    font-size: 4em;
+    color: white;
+}
+h2, h3{
+    color: rgb(227,24,54);
+    margin: 0;
+}
+/* BANNER */
+.banner{
+    background-image: url(./img/hx-hero-headset-cloud-wireless-lg.jpg);
+    margin: 0;
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+}
+/* CONT */
+.cont{
+    width: 100%;
+    background-color: white;
+}
+.main{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+}
+.main-info{
+    width: 70%;
+    padding: 20px;
+}
+.main-aside{
+    width: 30%;
+    height: fit-content;
+    color:  rgb(227,24,54);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+.main-aside h3{
+    color: black;
+}
+/* LINKS */
+.links{
+    width: 100%;
+    background-color: black;
+}
+.fyi{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: 100;
+}
+.fyi a{
+    color: white;
+}
+.fyi h3{
+    color:  rgb(227,24,54);
+}
+.fyi-latest{
+    width: 25%;
+    padding: 20px;
+}
+.fyi-popular{
+    width: 25%;
+    padding: 20px;
+}
+.fyi-follow{
+    width: 25%;
+    padding: 20px;
+}
+.fyi-follow-icons{
+    color:  rgb(227,24,54);
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fyi-follow-icons i{
+    margin: 10px 25px 10px 0;
+}
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: rgb(227, 24, 54);
+}
+.footer-ref{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: .8em;
+    text-align: center;
+    color: white;
+}

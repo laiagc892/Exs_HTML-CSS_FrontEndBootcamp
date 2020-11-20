@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.fons{
+    background-image: url(./img/fondos3.jpg);
+    width: 746px;
+    height: 567px;
+    margin: 2em auto;
+    padding: 2px;
+}
+.columna{
+    display: inline-block;
+    width: 220px;
+    padding: 13px;
+    vertical-align: top;
+}
+p{
+    margin: 0;
+}

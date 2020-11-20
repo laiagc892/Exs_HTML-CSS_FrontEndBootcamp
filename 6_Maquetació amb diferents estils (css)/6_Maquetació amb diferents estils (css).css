@@ -1,0 +1,60 @@
+body{
+    max-width: 60%;
+    margin: 20px auto;
+    background-image: url(./img/agent-background-generic.JPG);
+    background-repeat: repeat;
+    background-size: contain;
+}
+ul{
+    padding: 0;
+}
+ul{
+    margin: 20px 0;
+}
+/* Menú a un costat */
+ul li{
+    display: inline-block;
+    border: 3px solid crimson;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Links de menú sense "punts" de llista */
+ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+div{
+    margin: 0 0 3em 0;
+}
+div.fl{
+    display: flex;
+}
+h1, h2, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: wheat;
+    margin: 0 0 20px 0;
+}
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+h3{
+    background-color: crimson;
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+}
+img.sideleft{
+    float: left;
+    height: 400px;
+}
+img.sideright{
+    float: right;
+    height: 400px;
+}
