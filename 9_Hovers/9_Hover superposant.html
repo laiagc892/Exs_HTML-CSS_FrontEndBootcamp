@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9_Hover flotant</title>
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 5em auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .cont{
+            margin: 2em auto;
+            width: 1200px;
+            height: 660px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .quadres{
+            width: 600px;
+            height: 330px;
+            object-fit: cover;
+        }
+        .sobre:hover{
+            z-index: 1;
+        }
+        .mid{
+            width: 400px;
+            position: absolute;
+            /* Posem la imatge del mig en absolut perquè és l'única posició que no considera el lloc que ocuparia l'element i així no queda un espai en blanc que molesti pel document. */
+            top: 100px;
+            left: 450px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quin anime veuries si no estiguessis fent classe?</h1>
+    <div class="cont">
+        <img class="mid" src="./img/camiseta-shin-chan.jpg" alt="Shin Chan">
+        <img class="quadres sobre" src="./img/2017-mar27-Shingeki-no-Kyojin-03.jpg" alt="Shingeki no Kyojin">
+        <img class="quadres sobre" src="./img/inuyasha-1000x600-1-960x576.jpg" alt="Inuyasha">
+        <img class="quadres sobre" src="./img/Personatges_Detectiu_Conan.png" alt="Detectiu Conan">
+        <img class="quadres sobre" src="./img/onepiece-12_r3vz.jpg" alt="One Piece">
+    </div>
+</body>
+</html>

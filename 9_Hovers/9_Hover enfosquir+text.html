@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9_Hover flotant</title>
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 5em auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        .cont{
+            margin: 2em auto;
+            width: 1200px;
+            height: 660px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .fons{
+            background-color: black;
+            display: flex;
+            position: relative;
+            /* Posem relative al contenidor de cada quadre d'imatge + text perquè el text en absolut de després es pugui col·locar segons aquest contenidor, i no segons el body sencer.*/
+        }
+        .fons:hover .pic{
+            opacity: .3;
+            transition: .4s ease-in;
+        }
+        .fons:hover .text{
+            opacity: 1;
+            z-index: 1;
+            transition:.2s ease-in;
+        }
+        .pic{
+            width: 600px;
+            height: 330px;
+            object-fit: cover;
+            transition: 2s ease-out;
+        }
+        .text{
+            font-size: 3em;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 90px;
+            left: 180px;
+            opacity: 0;
+            transition: 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quin anime veuries si no estiguessis fent classe?</h1>
+    <div class="cont">
+        <div class="fons">
+            <p class="text">本気ですか</p>
+            <img class="pic" src="./img/2017-mar27-Shingeki-no-Kyojin-03.jpg" alt="Shingeki no Kyojin">
+        </div>
+        <div class="fons">
+            <p class="text">本気ですか</p>
+            <img class="pic" src="./img/inuyasha-1000x600-1-960x576.jpg" alt="Inuyasha">
+        </div>
+        <div class="fons">
+            <p class="text">本気ですか</p>
+            <img class="pic" src="./img/Personatges_Detectiu_Conan.png" alt="Detectiu Conan">
+        </div>
+        <div class="fons">
+            <p class="text">本気ですか</p>
+            <img class="pic" src="./img/onepiece-12_r3vz.jpg" alt="One Piece">
+        </div>
+    </div>
+</body>
+</html>
