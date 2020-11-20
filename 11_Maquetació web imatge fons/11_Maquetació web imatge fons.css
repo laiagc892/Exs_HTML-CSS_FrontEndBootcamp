@@ -62,7 +62,7 @@ p{
     margin: 0 auto;
 }
 .intro{
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     border-bottom: 2px solid  rgb(102,99,74);
 }
@@ -70,7 +70,7 @@ p{
     padding: 0 40px;
 }
 .col{
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -89,7 +89,7 @@ p{
     background-color: rgb(102,99,74);
 }
 .gal{
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
