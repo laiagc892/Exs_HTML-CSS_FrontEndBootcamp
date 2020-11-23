@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_Maquetació formularis</title>
+    <style>
+        form{
+            width: 600px;
+        }
+        form label{
+            width: 150px;
+            height: 40px;
+            display: inline-block;
+        }
+        form input{
+            width: 300px;
+        }
+        form label:not([type="chekbox"]){
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Formulari 1</h1>
+
+        <form>
+            <fieldset class="flex">
+                <legend>Part 1</legend>
+
+                <label for="entrega">Data d'entrega</label>
+                <input type="date" name="entrega">
+                <br>
+                <label for="exercici">Nom de l'exercici</label>
+                <input type="text" name="exercici" placeholder="Escriu el nom">
+                <br>
+                <label for="descripció">Descrpció de l'xercici</label>
+                <textarea name="descripció" placeholder="Descriu l'exercici"></textarea>
+                <br>
+            </fieldset>
+
+            <fieldset class="flex">
+                <legend>Part 2</legend>
+
+                <label for="completat">Exercici completat</label>
+                <input type="checkbox" name="completat">
+                <br>
+                <label for="color">Color preferit</label>
+                <input type="color" name="color">
+                <br>
+                <label for="nota">Nota</label>
+                <select name="nota" id="">
+                    <option value="0">Suficient</option>
+                    <option value="1">Bé</option>
+                    <option value="2" selected>Notable</option>
+                    <option value="3">Excel·lent</option>
+                </select>
+                <br>
+            </fieldset>
+            
+            <button>Enviar</button>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

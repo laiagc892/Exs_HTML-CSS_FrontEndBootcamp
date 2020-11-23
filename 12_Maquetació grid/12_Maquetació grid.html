@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_Maquetació grid</title>
+
+    <style>
+        .grid{
+            margin: auto;
+            width: 1024px;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-areas:"ar1 ar2 ar2 ar2 ar2 ar3"
+                                "ar1 ar2 ar2 ar2 ar2 ar3"
+                                "ar1 ar4 ar4 ar5 ar5 ar3"
+                                "ar6 ar4 ar4 ar8 ar8 ar3"
+                                "ar7 ar7 ar7 ar8 ar8 ar3";
+        }
+        .grid div{
+            padding: 10px;
+            background-color: rgba(95, 158, 160, 0.2);
+        }
+        .grid div p{
+            font-size: .8em;
+        }
+        .grid div h2{
+            font-size: 1em;
+        }
+        .ar1{
+            grid-area: ar1;
+        }
+        .ar2{
+            grid-area: ar2;
+        }
+        .ar3{
+            grid-area: ar3;
+        }
+        .ar4{
+            grid-area: ar4;
+        }
+        .ar5{
+            grid-area: ar5;
+        }
+        .ar6{
+            grid-area: ar6;
+        }
+        .ar7{
+            grid-area: ar7;
+        }
+        .ar8{
+            grid-area: ar8;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="ar1">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar2">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar3">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar4">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar5">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar6">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar7">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+        <div class="ar8">
+            <img src="http://placekitten.com/130/40" alt="">
+            <h2>Aquí va un gatet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur quae iste expedita repudiandae odio cupiditate esse nesciunt! Aliquam, ipsam.</p>
+        </div>
+</body>
+</html>
