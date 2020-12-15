@@ -1,0 +1,103 @@
+body{
+    margin: 50px 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.quadrat{
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+.despl{
+    position: relative;
+    left: 0;
+}
+.despl:hover{
+    left: 200px;
+    transition: 2s;
+}
+.flex{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex .quadrat{
+    margin: 0;
+}
+.text p{
+    margin: 0 0 0 50px;
+    text-align: center;    
+    size: 1em;
+}
+.text:hover p{
+    font-size: 3em;
+    transition: 2s;
+}
+.gir{
+    transform: rotateY(0);
+}
+.gir:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+.color{
+    background-color: blue;
+}
+.color:hover{
+    background-color: red;
+    transition: 2s;
+}
+.elastic{
+    width: 100px;
+    height: 100px;
+}
+.elastic:hover{
+    width: 300px;
+    height: 100px;
+    transition: 2s;
+}
+.desap{
+    opacity: 1;
+}
+.desap:hover{
+    opacity: 0;
+    transition: 2s;
+}
+.roda{
+    transform: rotate(0);
+    position: relative;
+    left: 0;
+}
+.roda:hover{
+    transform: rotate(360deg);
+    left: 200px;
+    transition: 2s;
+}
+.imag{
+    background-image: url(https://album.mediaset.es/eimg/10000/2020/08/19/clipping_ZSOsut_bb4d.jpg);
+    background-position: 0 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imag:hover{
+    background-position: top;
+    transition: 2s;
+}
+
+
+}
+input[type="checkbox"]:checked + div{
+    animation: bounce linear 4s;
+    animation-fill-mode: forwards;
+}
+label{
+    display: inline-block;
+}
+.bounce{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    bottom: 600px;
+    transition: none;
+}

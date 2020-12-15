@@ -1,0 +1,308 @@
+@font-face {    /* font importada d'un arxiu */
+    font-family: Nemo;
+    src: url(./img/Findet\ Nemo.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    cursor: url(./img/cursormini_blue_fish.png), auto;
+}
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    margin: 1em 0;
+}
+a, input, textarea, button{
+    cursor: url(./img/cursormini_white_fish.png), pointer;
+}
+h1, h2, h3{
+    margin-bottom: .5em;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.2em;
+    color: rgb(13,155,173);
+}
+.floatr{
+    float: right;
+}
+.floatl{
+    float: left;
+}
+/* HEADER */
+header{
+    background-color: rgb(199, 248, 255);
+}
+.cap{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(199, 248, 255);
+}
+.brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    margin: 0;
+    padding: 25px 0 25px 25px;
+}
+.nom{
+    margin: 0;
+    padding: 25px 0;
+    font-family: Nemo;
+    font-size: 4.9em;
+    font-weight: normal;
+    line-height: .8em;
+    color: rgb(13,155,173);
+}
+.nom p{
+    margin: 0;
+}
+#lesspad{
+    padding-left: 0;
+}
+#morepad{
+    padding: 0 25px;
+}
+.urgent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+}
+.urgent p{
+    white-space: nowrap;
+    margin: 5px;
+    font-size: .8em;
+}
+.urgent p a{
+    text-decoration: none;
+    padding: 15px 15px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(13,155,173);
+    border-radius: 5px;
+}
+.urgent p a:hover{
+    color: black;
+}
+/* MID */
+.mid{
+    width: 100%;
+    background-color: rgb(199, 248, 255);
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d9bad' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.cont{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+/* NAV */
+nav{
+    width: 130px;
+    padding: 10px;
+    position: sticky; /* sticky */
+    top: 0;
+    height: fit-content;
+    background-color: rgb(13,155,173);
+    border-radius: 20px 0 0 20px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin: 20px auto;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+    font-size: 1em;
+}
+nav ul li a:hover{
+    color: black;
+}
+/* MAIN */
+main{
+    padding: 30px;
+    background-color: white;
+}
+section{
+    margin: 1em 0 2em 0;
+}
+article{
+    margin: 1em 0;
+}
+.logo-hvm{
+    width: 200px;
+    padding: 5px;
+}
+.news{
+    display: flex;
+    justify-content: space-evenly;
+}
+.latest, .popular{
+    width: 40%;
+    line-height: 1.5em;
+}
+.latest a, .popular a{
+    color: black;
+}
+.latest a:hover, .popular a:hover{
+    color:  rgb(13,155,173);
+}
+.cirurgia{
+    width: 350px;
+    padding: 10px;
+}
+/* Club */
+.club{
+    padding: 20px;
+    background-color: rgb(199, 248, 255);
+    border-radius: 10px;
+    border: 3px solid rgb(13,155,173);
+}
+form{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+label, button{
+    width: 100px;
+    height: 1em;
+    margin: 5px 0;
+    padding: 5px 0;
+    color: rgb(13,155,173);
+}
+button{
+    height: 40px;
+    margin: 10px 0;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(13,155,173);
+    border-radius: 5px;
+    border: none;
+}
+input{
+    width: 250px;
+    height: 30px;
+    margin: 5px 0;
+}
+textarea{
+    width: 250px;
+    height: 50px;
+    margin: 5px 0;
+}
+/* ASIDE */
+aside{
+    width: 370px;
+    padding: 15px;
+    height: fit-content;
+    position: sticky; /* sticky */
+    top: 0;
+    background-color: rgb(13,155,173);
+    border-radius: 0 20px 20px 0;
+}
+.gallery{
+    width: 370px;
+    height: 570px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr 2fr 1fr 2fr;
+    gap: 5px;
+    grid-template-areas:"dory dory bico"
+                        "glob glob bico"
+                        "glob glob pope"
+                        "tort feoh feoh"
+                        "tort groc groc"
+                        "ogro groc groc";
+}
+.gallery div{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#globus{
+    grid-area: glob;
+    background-image: url(./img/7c5d03d4bcfafce87fa67dadd0dc7542.jpg);
+}
+#dory{
+    grid-area: dory;
+    background-image: url(./img/dory-finding-nemo-surgeon-fish.jpg);
+}
+#tortuga{
+    grid-area: tort;
+    background-image: url(./img/green-sea-turtle.jpg);
+}
+#ogroc{
+    grid-area: ogro;
+    background-image: url(./img/Longnose-Butterflyfish.jpg);
+}
+#feo{
+    grid-area: feoh;
+    background-image: url(./img/moorish-idol.jpg);
+}
+#bicolor{
+    grid-area: bico;
+    background-image: url(./img/royal-gramma.jpg);
+}
+#groc{
+    grid-area: groc;
+    background-image: url(./img/yellow-tang_sssssssss.jpg);
+}
+#popet{
+    grid-area: pope;
+    background-image: url(./img/Flapjack-Octopus.jpg);
+}
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #0d9bad;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e8fcff' fill-opacity='0.3'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.fyi{
+    width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:rgb(199, 248, 255);
+    border-radius: 20px;
+}
+.follow{
+    width: 400px;
+}
+.follow-icons{
+    color: rgb(13,155,173);
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.follow-icons i{
+    margin: 10px 20px 10px 0;
+}
+.ubi{
+    width: 400px;
+}
+/* REF */
+.ref{
+    background-color: rgb(199, 248, 255);
+    padding: 40px 0;
+    text-align: center;
+    font-size: .8em;
+}

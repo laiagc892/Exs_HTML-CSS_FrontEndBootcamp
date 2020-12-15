@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Media queries responsive</title>
+    <style>
+        div{
+            height: 120px;
+            background-color: thistle;
+            margin: 5px auto;
+        }
+        .fixed{
+            width: 600px;
+        }
+        .max{
+            max-width: 600px;
+        }
+        .min{
+            min-width: 600px;
+        }
+
+        /* ELS MEDIA QUERIES AMB MAX-WIDTH VAN DE GRAN A PETIT */
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .responsive{
+                max-width: 600px;
+            }
+        }
+
+        /* ELS MEDIA QUERIES AMB MAX-WIDTH VAN DE PETIT A GRAN */
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .responsive{
+                width: 600px;
+            }
+        }
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .responsive{
+                width: 768px;
+            }
+        }
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .responsive{
+                width: 992px;
+            }
+        }
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .responsive{
+                width: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <p>fixed dimensioms</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum minus cumque nulla dicta id ipsa dolorem culpa laborum deleniti.</p>
+    </div>
+    <div class="max">
+        <p>max dimensioms</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum minus cumque nulla dicta id ipsa dolorem culpa laborum deleniti.</p>
+    </div>
+    <div class="min">
+        <p>min dimensioms</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum minus cumque nulla dicta id ipsa dolorem culpa laborum deleniti.</p>
+    </div>
+    <div class="responsive">
+        <p>responsive dimensioms</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum minus cumque nulla dicta id ipsa dolorem culpa laborum deleniti.</p>
+    </div>
+</body>
+</html>

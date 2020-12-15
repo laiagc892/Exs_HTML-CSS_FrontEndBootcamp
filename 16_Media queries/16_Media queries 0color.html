@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Media queries color</title>
+
+    <!-- Atribut media, per determinar pantalla -->
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="styleM.css"> <!-- Estil per mobile -->
+    <link rel="stylesheet" media="screen and (min-width:800px)" href="styleD.css"> <!-- Estil per desktop -->
+
+    <style>
+        div {                                      /* Es carrega entre 800px i 1200px. */
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: rgb(92, 0, 128);
+        }
+        @media only screen and (min-width: 300px){ /* Es carrega la pàgina fins que arriba a una amplada de 800px o més. */
+            div {
+                background-color: rgb(0, 30, 128);
+            }
+        }
+        @media only screen and (min-width: 500px){ /* Es carrega la pàgina fins que arriba a una amplada de 800px o més. */
+            div {
+                background-color: teal;
+            }
+        }
+        @media only screen and (min-width: 700px){ /* Es carrega a partir d'aquesta amplada. */
+            div {
+                background-color: rgb(11, 128, 0);
+            }
+        }
+        @media only screen and (min-width: 900px){ /* Es carrega a partir d'aquesta amplada. */
+            div {
+                background-color: rgb(128, 105, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="media">
+        <p>Color</p>
+        <p>Media Query: Normes per dir-li al CSS quines regles ha d'aplicar o no.</p>
+        <p>Atribut Media: permet definir el tipus i resolució de pantalla en què es mostrarà l'arxiu (CSS).</p>
+    </div>
+</body>
+</html>

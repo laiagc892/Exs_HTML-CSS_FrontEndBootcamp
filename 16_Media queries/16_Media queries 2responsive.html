@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Media queries responsive try</title>
+    <style>
+        .cont{
+            margin: 1em auto;
+            background-color: transparent;
+            border: 2px solid navy;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cont div{
+            width: 180px;
+            height: 180px;
+            margin: 10px;
+            background-color: palegreen;
+        }
+        /* ELS MEDIA QUERIES AMB MAX-WIDTH VAN DE GRAN A PETIT */
+        @media only screen and (max-width: 500px) {
+            .responsive{
+                min-width: 200px;
+                max-width: 400px;
+            }
+            .cont div{
+                width: auto;
+            }
+        }
+        /* ELS MEDIA QUERIES AMB MAX-WIDTH VAN DE PETIT A GRAN */
+        @media only screen and (min-width: 500px) {
+            .responsive{
+                width: 400px;
+            }
+        }
+        @media only screen and (min-width: 900px) {
+            .responsive{
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont responsive">
+        <div>
+            <p>Quis porro aliquid sint numquam laudantium ducimus officia iure vel temporibus voluptatum sed earum illo quos.</p>
+        </div>
+        <div>
+            <p>Quis porro aliquid sint numquam laudantium ducimus officia iure vel temporibus voluptatum sed earum illo quos.</p>
+        </div>
+        <div>
+            <p>Quis porro aliquid sint numquam laudantium ducimus officia iure vel temporibus voluptatum sed earum illo quos.</p>
+        </div>
+        <div>
+            <p>Quis porro aliquid sint numquam laudantium ducimus officia iure vel temporibus voluptatum sed earum illo quos.</p>
+        </div>
+    </div>
+</body>
+</html>

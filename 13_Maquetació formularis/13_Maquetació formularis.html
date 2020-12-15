@@ -4,22 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>13_Maquetació formularis</title>
-    <style>
-        form{
-            width: 600px;
-        }
-        form label{
-            width: 150px;
-            height: 40px;
-            display: inline-block;
-        }
-        form input{
-            width: 300px;
-        }
-        form label:not([type="chekbox"]){
-            width: 200px;
-        }
-    </style>
+    <link rel="stylesheet" href="./13_Maquetació formularis.css">
 </head>
 <body>
     <div>
@@ -44,7 +29,7 @@
                 <legend>Part 2</legend>
 
                 <label for="completat">Exercici completat</label>
-                <input type="checkbox" name="completat">
+                <input type="checkbox" name="completat" id="completat">
                 <br>
                 <label for="color">Color preferit</label>
                 <input type="color" name="color">

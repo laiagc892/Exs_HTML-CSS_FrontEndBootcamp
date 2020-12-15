@@ -1,0 +1,14 @@
+form{
+    width: 600px;
+}
+form label{
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+}
+form input{
+    width: 300px;
+}
+form label:not([type="chekbox"]){
+    width: 200px;
+}

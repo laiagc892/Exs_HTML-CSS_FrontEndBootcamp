@@ -1,0 +1,114 @@
+apareix normal
+opacitat
+de dalt abaix: mida + overflow hidden
+op + dalt baix
+just hover
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1024px;
+    margin: 2em auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* MENU */
+nav{
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+}
+ul.menu{
+    width: 750px;
+    margin: 30px auto;
+    display: flex;
+}
+li.category{
+    position: relative;
+}
+li.category h2{
+    width: 150px;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 1.3em;
+    background-color: seagreen;
+}
+li.category h2 a{
+    color: white;
+    padding: 10px 25px;
+}
+li.category h2 a:hover{
+    color: yellowgreen;
+}
+li.category ul{
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    margin-left: 25px;
+    text-align: left;
+}
+li.category:hover ul{
+    visibility: visible;
+}
+li.op{
+    width: 100px;
+    padding: 10px 0;
+    margin: 0;
+    background-color: yellowgreen;
+}
+li.op a{
+    color: white;
+    padding: 10px 25px;
+}
+/* ANIMATIONS */
+/* v1 */
+.v1 ul{
+    display: none;
+}
+.v1:hover ul{
+    display: block;
+}
+/* v2 */
+.v2 ul{
+    opacity: 0;
+}
+.v2:hover ul{
+    opacity: 1;
+    transition: 1.5s ease;
+}
+/* v3 */
+.v3 ul{
+    overflow: hidden;
+    height: 0;
+}
+.v3:hover ul{
+    height: 195px;
+    transition: 1.5s ease;
+}
+/* v4 */
+.v4 ul{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+}
+.v4:hover ul{
+    height: 195px;
+    opacity: 1;
+    transition: 1.5s ease;
+}
+/* v5 */
+.v5 ul{
+    left: -1000px;
+}
+.v5:hover ul{
+    left: 0;
+    transition: 1.5s ease;
+}
